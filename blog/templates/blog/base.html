@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Gara Blog | {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+
+    <nav class="navbar is-light is-narrow">
+        <div class="navbar-brand"><a href="/" class="navbar-item"><strong>Gara Blog</strong></a></div>
+    </nav>
+
+    
+    <main class="container is-max-desktop box">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="has-text-centered">
+          <p>
+            <strong>Gara Blog</strong> by Sabbir Ahmed
+          </p>
+        </div>
+      </footer>
+
+</body>
+</html>
